@@ -1,2 +1,2 @@
 # LucasdaSilvaAleixo.github.io
-My personal website.
+My portfolio website.

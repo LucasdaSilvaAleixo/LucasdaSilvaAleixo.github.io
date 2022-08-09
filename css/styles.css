@@ -3,20 +3,21 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(90deg, #28313B, #485461);
+    background-color: #0a192f;
     font-family: 'Oswald', sans-serif;
 }
 
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 #menu {
-    margin: 0;
+    margin: 10px;
     list-style-type: none;
     padding: 10px;
     overflow: hidden;
-    background-color: #201c1c;
+    text-align: right;
 }
 
 #menu_list {
@@ -30,14 +31,19 @@ body {
     padding: 21px 21px;
 }
 
+#menu_link_selected {
+    text-decoration: none;
+    color: #64ffda;
+    padding: 21px 21px;
+}
+
 #menu_link:hover {
-    color: #FE2C55;
-    background-color: #28313B;
+    color: #64ffda;
 }
 
 h1 {
-    color: #FE2C55;
-    text-align: center;
+    color: white;
+    text-align: left;
     margin: 0px;
     padding: 0;
     font-size: 5rem;
@@ -45,10 +51,11 @@ h1 {
     bottom: 0;
     left: 0;
     width: 100%;
+    margin-left: 6rem;
 }
 
 #subtitle {
-    color: #25F4EE;
+    color: #64ffda;
     font-size: 3rem;
     padding: 0;
     margin: 0;
@@ -65,11 +72,11 @@ p {
     font-size: 1.5rem;
     line-height: 50px;
     margin: 0;
+    margin-left: 6rem;
 }
 
 footer {
     font-size: 1rem;
-    background-color: #201c1c;
     color: white;
     text-align: center;
     bottom: 0;
@@ -110,4 +117,17 @@ footer {
 ::selection {
     color: #FE2C55;
     background: #28313B;
+}
+
+#resume-button {
+    margin: 10px;
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 5rem;
+    padding: 0.75rem 1rem;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 15px;
 }
