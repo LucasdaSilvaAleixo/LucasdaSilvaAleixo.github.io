@@ -9,36 +9,82 @@ html {
 
 body {
     margin: 0;
-    overflow: hidden;
+}
+
+#toggle-language-menu {
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    text-align: left;
+    color: #64ffda;
+    text-decoration: none;
+    width: 300px;
+    float: left;
+    display: inline-block;
+}
+
+#portuguese {
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+
+#ingles {
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    text-align: left;
+    color: white;
+    text-decoration: none;
 }
 
 #menu {
     margin: 10px;
     list-style-type: none;
     padding: 10px;
-    overflow: hidden;
     text-align: right;
+    display: inline-block;
+    float: right;
 }
 
-#menu_list {
+#link {
+    text-decoration: none;
+    color: white;
+    padding: 21px 21px;
     display: inline;
     font-size: 1rem;
 }
 
-#menu_link {
-    text-decoration: none;
-    color: white;
-    padding: 21px 21px;
-}
-
-#menu_link_selected {
+#link-selected {
     text-decoration: none;
     color: #64ffda;
     padding: 21px 21px;
+    display: inline;
+    font-size: 1rem;
 }
 
-#menu_link:hover {
+#link:hover {
     color: #64ffda;
+}
+
+#resume-button {
+    margin: 10px;
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 5rem;
+    padding: 0.75rem 1rem;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+#resume-button:hover {
+    color: #023020;
 }
 
 h1 {
@@ -54,7 +100,7 @@ h1 {
     margin-left: 6rem;
 }
 
-#subtitle {
+#job-title {
     color: #64ffda;
     font-size: 3rem;
     padding: 0;
@@ -66,7 +112,7 @@ p {
     color: white;
 }
 
-#about-me {
+#skills {
     display: inline-block;
     text-align: left;
     font-size: 1.5rem;
@@ -75,38 +121,8 @@ p {
     margin-left: 6rem;
 }
 
-footer {
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-    bottom: 0;
-    height: 70px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    line-height: 25px;
-}
-
-#me {
-    color: #25F4EE;
-    font-size: 2rem;
-    margin-top: 55px;
-}
-
-#blue {
-    color: #25F4EE;
-}
-
-#red {
-    color: #FE2C55;
-}
-
 #bullet-point {
     color: grey;
-}
-
-#white {
-    color: white;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -117,17 +133,4 @@ footer {
 ::selection {
     color: #FE2C55;
     background: #28313B;
-}
-
-#resume-button {
-    margin: 10px;
-    color: #64ffda;
-    background-color: transparent;
-    border: 1px solid #64ffda;
-    border-radius: 5rem;
-    padding: 0.75rem 1rem;
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    margin-left: 15px;
 }

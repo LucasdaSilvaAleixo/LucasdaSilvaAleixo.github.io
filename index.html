@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,26 +10,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <script src="./scripts/script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
+        <div id="toggle-language">
+            <label id="toggle-language-menu">
+                <nav id="language-menu">
+                    <h3 class="pt-BR">Português</h3>
+                    <h3 class="en">English</h3>
+                    <ul>
+                        <li><a class="en" id="portuguese" href="#">Portuguese</a></li>
+                        <li><a class="pt-BR" id="ingles" href="#">Inglês</a></li>
+                    </ul>
+                </nav>
+            </label>
+        </div>
+
+        <nav id="nav-menu">
             <ul id="menu">
-                <a id="menu_link_selected" href="./index.html"><li id="menu_list">Início</li></a>
-                <a id="menu_link" href="./projetos.html"><li id="menu_list">Projetos</li></a>
-                <a id="menu_link" href="./sobre.html"><li id="menu_list">Sobre</li></a>
-                <a id="menu_link" href="./contato.html"><li id="menu_list">Contato</li></a>
-                <a id="resume-button" href="./Lucas_da_Silva_Aleixo_Curriculo.pdf" target="_blank">Currículo</a>
+                <a id="link-selected" href="./index.html"><li class="pt-BR">Início</li></a>
+                <a id="link-selected" href="./index.html"><li class="en">Home</li></a>
+                <a id="link" href="./projects.html"><li class="pt-BR">Projetos</li></a>
+                <a id="link" href="./projects.html"><li class="en">Projects</li></a>
+                <a id="link" href="./about.html"><li class="pt-BR">Sobre</li></a>
+                <a id="link" href="./about.html"><li class="en">About</li></a>
+                <a id="link" href="./contact.html"><li class="pt-BR">Contato</li></a>
+                <a id="link" href="./contact.html"><li class="en">Contact</li></a>
+                <a class="pt-BR" id="resume-button" href="./Lucas_da_Silva_Aleixo_Curriculo.pdf" target="_blank">Currículo</a>
+                <a class="en" id="resume-button" href="./Lucas_da_Silva_Aleixo_Resume.pdf" target="_blank">Resume</a>
+            </ul>
         </nav>
     </header>
-    <br><br>
-    <h1>Lucas da Silva Aleixo<br>
-    <span id=subtitle>Desenvolvedor Web</span></h1>
-    <div style="text-align: left;"><br>
-    <p id="about-me">💻 Estudante de Desenvolvimento Web<br>
-    👨‍💻 HTML <span id="bullet-point">•</span> CSS <span id="bullet-point">•</span> JavaScript <span id="bullet-point">•</span> Node.js <span id="bullet-point">•</span> Git<br>
-    📷 Pacote Office <span id="bullet-point">•</span> Photoshop<br>
-    🌎 Inglês Fluente</p>
+
+    <div id="reach-me">
+        <a href="http://www.linkedin.com/in/lucasdasilvaaleixo"><img alt="LinkedIn" src="./images/linkedin.png"></a>
+        <a href="https://github.com/LucasdaSilvaAleixo"><img alt="GitHub" src="./images/github.png"></a>
+        <a href="lucasdasilvaaleixocontato@gmail.com"><img alt="Email" src="./images/email.png"></a>
+        <img class="pt-BR" alt="Celular" src="./images/phone.png"><p class="pt-BR">+55 (11) 99462-8635</p>
+        <img class="en" alt="Phone" src="./images/phone.png"><p class="en">+55 (11) 99462-8635</p>
+    </div>
+
+    <h1 class="pt-BR">Lucas da Silva Aleixo<br><span id=job-title>Desenvolvedor Web</span></h1>
+    <h1 class="en">Lucas da Silva Aleixo<br><span id=job-title>Web Developer</span></h1>
+
+    <div class="pt-BR" id="skills-area" style="text-align: left;">
+        <p id="skills">💻 Estudante de Desenvolvimento Web<br>👨‍💻 HTML <span id="bullet-point">•</span> CSS <span id="bullet-point">•</span> JavaScript <span id="bullet-point">•</span> Node.js <span id="bullet-point">•</span> Git<br>📷 Pacote Office <span id="bullet-point">•</span> Photoshop<br>🌎 Inglês Fluente</p>
+    </div>
+    <div class="en" id="skills-area" style="text-align: left;">
+        <p id="skills">💻 Web Development Student<br>👨‍💻 HTML <span id="bullet-point">•</span> CSS <span id="bullet-point">•</span> JavaScript <span id="bullet-point">•</span> Node.js <span id="bullet-point">•</span> Git<br>📷 Microsoft Office <span id="bullet-point">•</span> Photoshop<br>🌎 Fluent English</p>
+    </div>
+
+    <div class="see-resume-button">
+        <a class="pt-BR" id="resume-button" href="./Lucas_da_Silva_Aleixo_Curriculo.pdf" target="_blank">Veja meu currículo</a>
+        <a class="en" id="resume-button" href="./Lucas_da_Silva_Aleixo_Resume.pdf" target="_blank">See my resume</a>
     </div>
 </body>
 </html>
