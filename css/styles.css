@@ -1,69 +1,52 @@
 html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
     background-color: #0a192f;
     font-family: 'Oswald', sans-serif;
+    margin: 7px;
 }
 
-body {
-    margin: 0;
+#wrapper {
+    width: 100%;
 }
 
-#toggle-language-menu {
-    margin: 10px;
-    padding: 10px;
-    list-style-type: none;
-    text-align: left;
-    color: #64ffda;
-    text-decoration: none;
-    width: 300px;
+#website-logo {
+    width: 53.5%;
+    height: 100%;
     float: left;
     display: inline-block;
 }
 
-#portuguese {
-    margin: 10px;
-    padding: 10px;
-    list-style-type: none;
-    text-align: left;
-    color: white;
+#logo {
+    margin: 0;
+    margin-left: 15px;
+    color: #64ffda;
+    font-size: 3rem;
     text-decoration: none;
 }
 
-#ingles {
-    margin: 10px;
-    padding: 10px;
-    list-style-type: none;
-    text-align: left;
+#white {
     color: white;
-    text-decoration: none;
+}
+
+#navegation-menu {
+    width: 100%;
 }
 
 #menu {
-    margin: 10px;
     list-style-type: none;
-    padding: 10px;
-    text-align: right;
-    display: inline-block;
-    float: right;
 }
 
 #link {
     text-decoration: none;
     color: white;
     padding: 21px 21px;
-    display: inline;
-    font-size: 1rem;
+    display: inline-block;
 }
 
 #link-selected {
     text-decoration: none;
     color: #64ffda;
     padding: 21px 21px;
-    display: inline;
-    font-size: 1rem;
+    display: inline-block;
 }
 
 #link:hover {
@@ -71,66 +54,81 @@ body {
 }
 
 #resume-button {
-    margin: 10px;
     color: #64ffda;
-    background-color: transparent;
     border: 1px solid #64ffda;
-    border-radius: 5rem;
+    border-radius: 5px;
     padding: 0.75rem 1rem;
     line-height: 1;
     text-decoration: none;
+    list-style-type: none;
     cursor: pointer;
-    margin-left: 15px;
+    margin-left: 4px;
 }
 
 #resume-button:hover {
-    color: #023020;
+    background: rgba(100, 255, 218, 0.1);
+}
+
+#social-media {
+    width: 0%;
+    height: 100%;
+    margin: 20px;
+    float: left;
+    display: inline-block;
 }
 
 h1 {
-    color: white;
-    text-align: left;
-    margin: 0px;
-    padding: 0;
-    font-size: 5rem;
+    font-size: 4.5rem;
+    color: #64ffda;
     line-height: 60px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin-left: 6rem;
+    margin-top: 70px;
+    margin-left: 240px;
+    margin-bottom: 0;
 }
 
 #job-title {
-    color: #64ffda;
-    font-size: 3rem;
-    padding: 0;
-    margin: 0;
-}
-
-p {
-    text-align: center;
+    font-size: 3.5rem;
+    margin-left: 95px;
     color: white;
 }
 
+#skills-area {
+    width: 100%;
+}
+
 #skills {
-    display: inline-block;
-    text-align: left;
     font-size: 1.5rem;
-    line-height: 50px;
-    margin: 0;
-    margin-left: 6rem;
+    color: rgb(255,255,255, 0.9);
+    margin-left: 35%;
 }
 
 #bullet-point {
     color: grey;
 }
 
-::-moz-selection { /* Code for Firefox */
-    color: #FE2C55;
-    background: #28313B;
-  }
+#see-resume-button {
+    text-align: center;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    line-height: 1;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+#see-resume-button:hover {
+    background: rgba(100, 255, 218, 0.1);
+}
+
+::-moz-selection {
+    color: #0a192f;
+    background-color: #64ffda;
+}
   
 ::selection {
-    color: #FE2C55;
-    background: #28313B;
+    color: #0a192f;
+    background-color: #64ffda;
 }
