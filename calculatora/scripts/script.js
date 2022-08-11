@@ -3,9 +3,6 @@ var current_operand = "0" // used to determine the value of the current operand 
 var previous_operand = "" // used to determine the value of the previous operand screen
 var point = false // used to determine if a point can be placed
 var negate = false // used to determine if a number can be negated
-var left_parentheses = false // used to determine if a left parenthese can be placed
-var right_parentheses = true // used to determine if a right parenthese can be placed
-var parenthesesState = 0 // used to determine if the user closed the parentheses
 
 /* Set calculator display to 0 */
 document.getElementById("current-operand").innerHTML = current_operand
@@ -80,12 +77,6 @@ document.getElementById("plus").addEventListener('click', function(event) {
 /* Calculates the result */
 document.getElementById("equals").addEventListener('click', function(event) {
     if (previous_operand !== "") { // If the previous operand screen is empty, it does nothing, otherwise it calculates the result
-        parenthesesState = (previous_operand.match(/\(/g) || []).length + (previous_operand.match(/\)/g) || []).length + (current_operand.match(/\)/g) || []).length // Calculates how many parentheses the user has placed
-
-        if (parenthesesState % 2 == 0 === false) {
-            current_operand = current_operand + ")" // If the user did not close the parentheses, then it does
-        }
-
         if (current_operand.slice(0, 1) == "-") {
             current_operand = "(" + current_operand + ")" // If it is a negative number, it adds parentheses around it
         }
@@ -116,23 +107,6 @@ document.getElementById("equals").addEventListener('click', function(event) {
         } else {
             negate = false
         }
-
-        /* Set variable values to default */
-        left_parentheses = false
-        right_parentheses = true
-    }
-})
-
-document.getElementById("parentheses").addEventListener('click', function(event) {
-    if (left_parentheses === false) { // If a left parentheses is not placed, it does
-        current_operand = "(" + current_operand
-        left_parentheses = true // Left parentheses is now placed
-        updateCurrentOperand(current_operand)
-        return
-    } else if (right_parentheses === false) { // If a right parentheses is not placed, it does
-        current_operand = current_operand + ")"
-        right_parentheses = true // Right parentheses is now placed
-        updateCurrentOperand(current_operand)
     }
 })
 
@@ -168,68 +142,12 @@ document.getElementById("negate").addEventListener('click', function(event) {
 document.getElementById("delete").addEventListener('click', function(event) {
     if (current_operand == "0") return // If the number is zero, it does nothing
 
-    if (current_operand == "(0") {
-        current_operand = 0
-
-        // Set variable values to default
-        point = false
-        left_parentheses = false
-        right_parentheses = true
-        updateCurrentOperand(current_operand)
-        return
-    }
-
-    if (current_operand.length = 2 && current_operand.slice(0, 1) == "(" && current_operand.slice(0, 2) == "(0" === false) { // If there is only one parentheses and a number that is not zero, it will be replaced by "(0"
-        current_operand = "(0"
-
-        // Set variable values to default
-        point = false
-        updateCurrentOperand(current_operand)
-        return
-    }
-
-    if (current_operand == "-0)") {
-        current_operand = "-0"
-
-        // Set variable values to default
-        point = false
-        left_parentheses = true
-        right_parentheses = false
-        updateCurrentOperand(current_operand)
-        return
-    }
-
-    if (current_operand == "(-0") {
-        current_operand = "(0"
-
-        // Set variable values to default
-        point = false
-        negate = false
-        updateCurrentOperand(current_operand)
-        return
-    }
-
-    if (current_operand == "(-0.") {
-        current_operand = "(-0"
-
-        // Set variable values to default
-        point = false
-        updateCurrentOperand(current_operand)
-        return
-    }
-
     if (current_operand == "-0") {
         current_operand = "0"
 
         // Set variable values to default
         point = false
         negate = false
-        updateCurrentOperand(current_operand)
-        return
-    }
-
-    if (current_operand.length == 3 && current_operand.slice(0, 2) == "(-" && current_operand.slice(0, 3) != "(-0") { // If there is only one parentheses and a negative number that is not zero, it will be replaced by "(-0"
-        current_operand = "(-0"
         updateCurrentOperand(current_operand)
         return
     }
@@ -278,8 +196,6 @@ document.getElementById("all-clear").addEventListener('click', function(event) {
     previous_operand = previous_operand.slice(1)
     point = false
     negate = false
-    left_parentheses = false
-    right_parentheses = true
     updateCurrentOperand(current_operand)
     updatePreviousOperand(previous_operand)
 })
@@ -297,7 +213,7 @@ function updatePreviousOperand(value) {
 // Appends the number to current operand screen
 function appendNumber(number) {
     /* If the number is not equal zero, it appends a number */
-    if (current_operand != "0" && current_operand != "-0" && current_operand != "(0" && current_operand != "0)" && current_operand != "(-0" && current_operand != "-0)") {
+    if (current_operand != "0" && current_operand != "-0") {
         current_operand = current_operand + number
         updateCurrentOperand(current_operand)
     /* If the number is equal zero, it is replaced by another number */
@@ -306,18 +222,6 @@ function appendNumber(number) {
         updateCurrentOperand(current_operand)
     } else if (current_operand == "-0"){
         current_operand = "-" + number
-        updateCurrentOperand(current_operand)
-    } else if (current_operand == "(0") {
-        current_operand = "(" + number
-        updateCurrentOperand(current_operand)
-    } else if (current_operand == "0)") {
-        current_operand = number + ")"
-        updateCurrentOperand(current_operand)
-    } else if (current_operand == "(-0") {
-        current_operand = "(-" + number
-        updateCurrentOperand(current_operand)
-    } else if (current_operand == "-0)") {
-        current_operand = "-" + number + ")"
         updateCurrentOperand(current_operand)
     }
 }
@@ -329,21 +233,8 @@ function operators(operator) {
         current_operand = "0"
     }
 
-    if (current_operand == "(-0") {
-        current_operand = "(0"
-    }
-
-    if (current_operand == "-0)") {
-        current_operand = "0)"
-    }
-
     if (current_operand.slice(-1) == ".") { // If last character is a point, it is removed
         current_operand = current_operand.slice(0, -1)
-    }
-
-    if (current_operand.slice(-2) == ".)") { // If penultimate character is a point, it is removed
-        current_operand = current_operand.slice(0, -2)
-        current_operand = current_operand + ")"
     }
 
     if (current_operand.slice(0, 1) == "-") { // If number is negative, it is placed in parentheses
@@ -355,26 +246,6 @@ function operators(operator) {
 
 function appendExpressions(operator) {
     previous_operand = previous_operand + " " + current_operand + " " + operator // Appends current operand number and operator to previous operand screen
-
-    if (left_parentheses === true && right_parentheses === false) { // If the user did not close the parentheses, they cannot start another one
-        right_parentheses = false
-    }
-
-    if (right_parentheses === true && left_parentheses === false) { // If the user closed the parentheses, they can start another one
-        left_parentheses = false
-    }
-
-    parenthesesState = (previous_operand.match(/\(/g) || []).length + (previous_operand.match(/\)/g) || []).length // Calculates how many parentheses the user placed
-
-    if (left_parentheses === true && right_parentheses === true && (parenthesesState % 2 == 0 === false)) { // If the user did not close the parentheses, they cannot start another one
-        left_parentheses = true
-        right_parentheses = false
-    }
-
-    if (left_parentheses === true && right_parentheses === true && (parenthesesState % 2 == 0 === true)) { // If the user closed the parentheses, they can start another one
-        left_parentheses = false
-        right_parentheses = true
-    }
 
     /* Set variable values to default and updates screen */
     current_operand = "0"

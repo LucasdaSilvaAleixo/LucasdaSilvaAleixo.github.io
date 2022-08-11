@@ -90,6 +90,15 @@ h1 {
     margin-bottom: 0;
 }
 
+#contact {
+    font-size: 4.5rem;
+    color: #64ffda;
+    line-height: 60px;
+    margin-top: 7%;
+    text-align: left;
+    margin-bottom: 0;
+}
+
 #job-title {
     font-size: 3.5rem;
     text-align: center;
@@ -104,6 +113,30 @@ h1 {
     font-size: 1.5rem;
     color: rgb(255,255,255, 0.9);
     text-align: left;
+}
+
+#skills-projects {
+    font-size: 1.3rem;
+    color: rgb(255,255,255, 0.9);
+    text-align: left;
+}
+
+#projects {
+    font-size: 1.5rem;
+    color: #64ffda;
+    text-align: left;
+    text-decoration: none;
+}
+
+#projects:hover {
+    color: white;
+}
+
+#skills-contact {
+    font-size: 1.5rem;
+    color: rgb(255,255,255, 0.9);
+    text-align: left;
+    line-height: 40px;
 }
 
 #bullet-point {
@@ -211,5 +244,43 @@ h1 {
         list-style-type: none;
         cursor: pointer;
         margin-left: 16.3%;
+    }
+
+    #contact {
+        font-size: 4.5rem;
+        color: #64ffda;
+        line-height: 33px;
+        margin-top: 7%;
+        text-align: center;
+        margin-bottom: 0;  
+    }
+
+    #skills-contact {
+        font-size: 29px;
+        color: rgb(255,255,255, 0.9);
+        text-align: left;
+        line-height: 60px;
+    }
+
+    #email {
+        font-size: 23px;
+    }
+
+    #projects {
+        font-size: 21px;
+        color: #64ffda;
+        text-align: left;
+        text-decoration: none;
+    }
+    
+    #projects:hover {
+        color: white;
+    }
+    
+    #skills-contact {
+        font-size: 1.5rem;
+        color: rgb(255,255,255, 0.9);
+        text-align: left;
+        line-height: 40px;
     }
 }

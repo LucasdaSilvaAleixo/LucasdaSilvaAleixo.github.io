@@ -7,7 +7,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(to right, rgba(86, 171, 47, 1), rgba(168, 224, 99, 1));
+    background-color: #0a192f;
 }
 
 .calculator-grid {
@@ -33,7 +33,7 @@ body {
 
 .output {
     grid-column: 1/-1;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: rgba(0, 0, 0, .45);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -49,6 +49,10 @@ body {
 .output .current-operand {
     color: white;
     font-size: 2.5rem;
+}
+
+.span-two {
+    grid-column: span 2;
 }
 
 ::-moz-selection { /* Code for Firefox */
