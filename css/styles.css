@@ -27,6 +27,10 @@ html {
     color: white;
 }
 
+#blue {
+    color: #64ffda;
+}
+
 #navegation-menu {
     width: 100%;
 }
@@ -70,7 +74,7 @@ html {
 }
 
 #social-media {
-    width: 0%;
+    width: 30%;
     height: 100%;
     margin: 20px;
     float: left;
@@ -81,14 +85,14 @@ h1 {
     font-size: 4.5rem;
     color: #64ffda;
     line-height: 60px;
-    margin-top: 70px;
-    margin-left: 240px;
+    margin-top: 7%;
+    text-align: left;
     margin-bottom: 0;
 }
 
 #job-title {
     font-size: 3.5rem;
-    margin-left: 95px;
+    text-align: center;
     color: white;
 }
 
@@ -99,7 +103,7 @@ h1 {
 #skills {
     font-size: 1.5rem;
     color: rgb(255,255,255, 0.9);
-    margin-left: 35%;
+    text-align: left;
 }
 
 #bullet-point {
@@ -116,7 +120,6 @@ h1 {
     text-decoration: none;
     list-style-type: none;
     cursor: pointer;
-    margin-left: 45%;
 }
 
 #see-resume-button:hover {
@@ -131,4 +134,82 @@ h1 {
 ::selection {
     color: #0a192f;
     background-color: #64ffda;
+}
+
+@media screen and (max-width: 1000px) {
+    #website-logo {
+        width: 30%;
+        height: 100%;
+        float: left;
+        display: inline-block;
+    }
+
+    #logo {
+        margin: 0;
+        margin-left: 8px;
+        color: #64ffda;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+
+    #resume-button {
+        visibility: hidden;
+    }
+
+    #link {
+        margin-top: 17px;
+        margin-left: 3.5px;
+        text-decoration: none;
+        color: white;
+        padding: 6px 6px;
+        display: inline-block;
+    }
+    
+    #link-selected {
+        text-decoration: none;
+        color: #64ffda;
+        padding: 6px 6px;
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 60px;
+        color: #64ffda;
+        line-height: 70px;
+        margin-top: 10%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #job-title {
+        font-size: 40px;
+        text-align: center;
+        color: white;
+    }
+
+    #social-media {
+        display: none;
+    }
+
+    #skills {
+        font-size: 29px;
+        color: rgb(255,255,255, 0.9);
+        text-align: left;
+        margin-left: 15px;
+        margin-bottom: 54px; 
+    }
+
+    #see-resume-button {
+        font-size: 30px;
+        text-align: center;
+        color: #64ffda;
+        border: 1px solid #64ffda;
+        border-radius: 5px;
+        padding: 0.75rem 1rem;
+        line-height: 1;
+        text-decoration: none;
+        list-style-type: none;
+        cursor: pointer;
+        margin-left: 16.3%;
+    }
 }
