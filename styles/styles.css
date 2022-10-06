@@ -1,0 +1,220 @@
+html {
+    background-color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #ff0000;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.text-footer {
+    margin-left: 10px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+#website-logo {
+    margin-left: 10px;
+    width: 53.5%;
+    height: 100%;
+    float: left;
+    display: inline-block;
+}
+
+#logo {
+    margin-left: 5px;
+}
+
+#navegation-menu {
+    width: 100%;
+}
+
+#menu {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #000000;
+    padding: 21px 21px;
+    display: inline-block;
+}
+
+#active {
+    color: #ff0000;
+}
+
+#active-resume {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.link:hover {
+    color: #ff0000;
+}
+
+.resume-button {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    line-height: 1;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    margin-left: -3px;
+}
+
+.resume-button:hover {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+#social-media {
+    width: 30%;
+    height: 100%;
+    margin: 20px;
+    float: left;
+    display: inline-block;
+}
+
+#contact {
+    font-size: 4.5rem;
+    color: #64ffda;
+    line-height: 60px;
+    margin-top: 7%;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#job-title {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+}
+
+#skills-area {
+    width: 100%;
+}
+
+#skills {
+    font-size: 1.5rem;
+    color: rgb(255,255,255, 0.9);
+    text-align: left;
+}
+
+#skills-projects {
+    font-size: 1.3rem;
+    color: rgb(255,255,255, 0.9);
+    text-align: left;
+}
+
+#projects {
+    font-size: 1.5rem;
+    color: #64ffda;
+    text-align: left;
+    text-decoration: none;
+}
+
+#projects:hover {
+    color: white;
+}
+
+#skills-contact {
+    font-size: 1.5rem;
+    color: rgb(255,255,255, 0.9);
+    text-align: left;
+    line-height: 40px;
+}
+
+#bullet-point {
+    color: grey;
+}
+
+#see-resume-button {
+    text-align: center;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    line-height: 1;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#see-resume-button:hover {
+    background: rgba(100, 255, 218, 0.1);
+}
+
+h1 {
+    margin: auto;
+    color: red;
+    text-align: center;
+    font-size: 50px;
+}
+
+.resume-subtitle {
+    margin: auto;
+    color: red;
+    margin-left: 15px;
+}
+
+.resume-topics {
+    margin: auto;
+    color: red;
+    margin-left: 15px;
+}
+
+.resume-text {
+    margin: auto;
+    margin-left: 15px;
+}
+
+.resume-text-centered {
+    text-align: center;
+    margin: auto;
+    color: black;
+    text-decoration: none;
+}
+
+.resume-text-centered-inline {
+    text-align: center;
+    margin: auto;
+    color: black;
+    display: inline;
+}
+
+.resume-text-centered-link {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resume-text-centered-inline {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resume-text-centered-link-inline {
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+
+::selection {
+    color: #ffffff;
+    background-color: #ff0000;
+}
+
+::-moz-selection {
+    color: #ffffff;
+    background-color: #ff0000;
+}

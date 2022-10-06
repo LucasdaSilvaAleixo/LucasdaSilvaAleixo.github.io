@@ -1,5 +1,5 @@
 html {
-    background-color: #0a192f;
+    background-color: #ffffff;
     font-family: 'Oswald', sans-serif;
     margin: 7px;
 }
@@ -42,13 +42,6 @@ html {
 #link {
     text-decoration: none;
     color: white;
-    padding: 21px 21px;
-    display: inline-block;
-}
-
-#link-selected {
-    text-decoration: none;
-    color: #64ffda;
     padding: 21px 21px;
     display: inline-block;
 }
