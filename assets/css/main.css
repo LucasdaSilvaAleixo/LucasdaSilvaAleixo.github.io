@@ -2661,3 +2661,17 @@ input, select, textarea {
 .contact {
 	text-align: left;
 }
+
+nav a:hover {
+	background-color: #1D2023;
+}
+
+::selection {
+    color: #ffffff;
+    background-color: #e27689;
+}
+
+::-moz-selection {
+    color: #ffffff;
+    background-color: #e27689;
+}
