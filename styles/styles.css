@@ -20,6 +20,12 @@ a {
     color: #8b0000;
 }
 
+#left-footer {
+    float: left;
+    width: 93%;
+    height: 100%;
+}
+
 footer {
     color: #ffffff;
     background-color: #ff0000;
