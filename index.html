@@ -5,71 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas da Silva Aleixo</title>
-    <link rel="icon" type="image/x-icon" href="./images/logo.png">
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-    <script src="./scripts/script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body>
-    <header>
-        <div class="wrapper">
-            <div id="website-logo">
-                <a href="./index.html" id="logo"><img src="./images/logo.png" alt="LSA" height="75px" width="75px"></a>
-            </div>
+<body class="is-preload">
+    <div id="header">
 
-            <div id="navegation-menu">
-                <nav id="nav-menu">
-                    <ul id="menu">
-                        <a class="link" id="active" href="./index.html"><li>Início</li></a>
-                        <a class="link" href="./projects.html"><li>Projetos</li></a>
-                        <a class="link" href="./about.html"><li>Sobre</li></a>
-                        <a class="link" href="./contact.html"><li>Contato</li></a>
-                        <a class="resume-button" href="./resume.html">Currículo</a>
+        <div class="top">
+
+                <div id="logo">
+                    <h1 id="title">Lucas da Silva Aleixo</h1>
+                    <p>Desenvolvedor Full Stack</p>
+                </div>
+
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#top" id="top-link"><span class="icon solid fa-home">Introdução</span></a></li>
+                        <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfólio</span></a></li>
+                        <li><a href="#about" id="about-link"><span class="icon solid fa-tools">Habilidades</span></a></li>
+                        <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contato</span></a></li>
                     </ul>
                 </nav>
-            </div>
-        </div>
-    </header>
 
-    <br>
-    <br>
+        </div>
 
-    <div class="wrapper">
-        <div id="me">
-            <img src="./images/favicon.ico" alt="me">
+        <a href="./attachments/Lucas-da-Silva-Aleixo-Desenvolvedor-Full-Stack-Currículo.pdf" target="_blank" id="resume" class="button scrolly">Currículo</a>
+
+        <div class="bottom">
+
+            <!-- Social Icons -->
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/lucasdasilvaaleixo/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/LucasdaSilvaAleixo" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="mailto:lucasdasilvaaleixocontato@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    <li><a href="#contact" class="icon solid fa-phone"><span class="label">Celular</span></a></li>
+                </ul>
+
         </div>
-    
-        <div id="presentation">
-            <h1 id="name">Lucas da Silva Aleixo</h1>
-            <h2 id="occupation">Desenvolvedor Full Stack</h2>
-            <p>🎉 18 Anos</p>
-            <p>💻 HTML • CSS • JavaScript</p>
-            <p>📊 Pacote Office</p>
-            <p>🌎 Inglês (fluente)</p>
-        </div>
+
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+<!-- Main -->
+    <div id="main">
 
-    <footer>
-        <div class="wrapper">
-            <div id="left-footer">
-                <br>
-                <p class="text-footer">📧 Email: lucasdasilvaaleixocontato@gmail.com</p>
-                <p class="text-footer">📞 Celular: +55 (11) 99462-8635</p>
-                <p class="text-footer">&nbsp;📍&nbsp; Rua Paulo Gracindo, 45, Jardim Calux | São Bernardo do Campo, São Paulo, Brasil | 09896-270</p>
-                <br>
-            </div>
-            <div id="right-footer">
-                <a href="https://www.linkedin.com/in/lucasdasilvaaleixo" target="_blank"><img src="./images/linkedin.png" height="60px" width="60px" alt="LinkedIn"></a>
-                <a href="https://github.com/LucasdaSilvaAleixo" target="_blank"><img src="./images/github.png" height="62px" width="62px" alt="GitHub"></a>
-            </div>
-        </div>
-    </footer>
+        <!-- Intro -->
+            <section id="top" class="one dark cover">
+                <div class="container">
+
+                    <header>
+                        <h2 class="alt">Olá! Meu nome é <strong>Lucas da Silva Aleixo</strong>, sou um <strong>Desenvolvedor Full Stack</strong></h2>
+                        <p>Desenvolvedor Full Stack que busca crescimento contínuo, causando impacto na vida das pessoas desenvolvendo códigos prezando pela experiência e usabilidade.</p>
+                    </header>
+
+                    <footer>
+                        <a href="#portfolio" target="_blank" id="view-projects" class="button scrolly">Ver projetos</a>
+                    </footer>
+
+                </div>
+            </section>
+
+        <!-- Portfolio -->
+            <section id="portfolio" class="two">
+                <div class="container">
+
+                    <header>
+                        <h2>Portfólio</h2>
+                    </header>
+
+                </div>
+            </section>
+
+            <section id="about" class="three">
+                <div class="container">
+
+                    <header>
+                        <h2>Habilidades</h2>
+                    </header>
+
+                </div>
+            </section>
+
+        <!-- Contact -->
+            <section id="contact" class="four">
+                <div class="container">
+
+                    <header>
+                        <h2>Contato</h2>
+                        <br>
+                        <div class="contact" style="display: flex;">
+                            <li><a href="mailto:lucasdasilvaaleixocontato@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li><a href="mailto:lucasdasilvaaleixocontato@gmail.com" target="_blank">&nbsp;&nbsp;lucasdasilvaaleixocontato@gmail.com</a>
+                        </div>
+                        <div class="contact" style="display: flex;">
+                            <li><a href="#" class="icon solid fa-phone"><span class="label">Celular</span></a></li><a>&nbsp;&nbsp;+55 (11) 99462-8635</a>
+                        </div>
+                        <div class="contact" style="display: flex;">
+                            <li><a href="https://www.linkedin.com/in/lucasdasilvaaleixo/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a href="https://www.linkedin.com/in/lucasdasilvaaleixo/" target="_blank"></li><a>&nbsp;&nbsp;https://www.linkedin.com/in/lucasdasilvaaleixo/</a>
+                        </div>
+                        <div class="contact" style="display: flex;">
+                            <li><a href="https://github.com/LucasdaSilvaAleixo" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li><a href="https://github.com/LucasdaSilvaAleixo" target="_blank">&nbsp;&nbsp;https://github.com/LucasdaSilvaAleixo</a>
+                        </div>
+                    </header>
+
+                </div>
+            </section>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
